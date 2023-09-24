@@ -103,14 +103,11 @@ const DropDown = styled.div`
           : `bottom: ${isomorphicWindow().innerHeight - selectBounds.top + dropdownGap}px;`
       }
       left: ${selectBounds.left - 1}px;`
-      : 'left: -1px;'};
-  border: 1px solid #ccc;
+      : 'right:0;'};
   width: ${({ selectBounds }) => selectBounds.width}px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border-radius: 2px;
   box-shadow: 0 0 10px 0 ${() => hexToRGBA('#000000', 0.2)};
   max-height: ${({ dropdownHeight }) => dropdownHeight};
   overflow: auto;
